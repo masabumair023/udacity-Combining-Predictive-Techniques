@@ -1,0 +1,259 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.4">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">storesalesdata.csv</File>
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+            <Delimeter>,</Delimeter>
+            <IgnoreErrors>False</IgnoreErrors>
+            <FieldLen>254</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>storesalesdata.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Store" size="254" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\storesalesdata.csv" type="V_String" />
+            <Field name="Day" size="254" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\storesalesdata.csv" type="V_String" />
+            <Field name="Month" size="254" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\storesalesdata.csv" type="V_String" />
+            <Field name="Year" size="254" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\storesalesdata.csv" type="V_String" />
+            <Field name="Dry_Grocery" size="254" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\storesalesdata.csv" type="V_String" />
+            <Field name="Dairy" size="254" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\storesalesdata.csv" type="V_String" />
+            <Field name="Frozen_Food" size="254" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\storesalesdata.csv" type="V_String" />
+            <Field name="Meat" size="254" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\storesalesdata.csv" type="V_String" />
+            <Field name="Produce" size="254" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\storesalesdata.csv" type="V_String" />
+            <Field name="Floral" size="254" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\storesalesdata.csv" type="V_String" />
+            <Field name="Deli" size="254" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\storesalesdata.csv" type="V_String" />
+            <Field name="Bakery" size="254" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\storesalesdata.csv" type="V_String" />
+            <Field name="General_Merchandise" size="254" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\storesalesdata.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">Existing Stores Forecast.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Existing Stores Forecast.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Year" source="Formula: IIF([Period] = 4 OR [Period] =..." type="Double" />
+            <Field name="Months" size="1073741823" source="Formula: IF [Sub_Period] = 11 THEN &quot;Jan..." type="V_WString" />
+            <Field name="Existing_Forecast" source="R-DATA:" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">NewStores Forecast.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>NewStores Forecast.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Year" source="Formula: IIF([Period] = 4 OR [Period] =..." type="Double" />
+            <Field name="Months" size="1073741823" source="Formula: IF [Sub_Period] = 11 THEN &quot;Jan..." type="V_WString" />
+            <Field name="New Forecast" source="Summarize: Sum - forecast" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="246" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Year" action="GroupBy" rename="Year" />
+            <SummarizeField field="Month" action="GroupBy" rename="Month" />
+            <SummarizeField field="Produce" action="Sum" rename="Sum_Produce" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="150" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="Store" selected="True" />
+            <Field field="Day" selected="True" />
+            <Field field="Month" selected="True" />
+            <Field field="Year" selected="True" />
+            <Field field="Dry_Grocery" selected="True" />
+            <Field field="Dairy" selected="True" />
+            <Field field="Frozen_Food" selected="True" />
+            <Field field="Meat" selected="True" />
+            <Field field="Produce" selected="True" />
+            <Field field="Floral" selected="True" />
+            <Field field="Deli" selected="True" />
+            <Field field="Bakery" selected="True" />
+            <Field field="General_Merchandise" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Store" size="5" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\storesalesdata.csv" type="String" />
+            <Field name="Day" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\storesalesdata.csv" type="Byte" />
+            <Field name="Month" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\storesalesdata.csv" type="Byte" />
+            <Field name="Year" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\storesalesdata.csv" type="Int16" />
+            <Field name="Dry_Grocery" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\storesalesdata.csv" type="Double" />
+            <Field name="Dairy" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\storesalesdata.csv" type="Double" />
+            <Field name="Frozen_Food" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\storesalesdata.csv" type="Double" />
+            <Field name="Meat" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\storesalesdata.csv" type="Double" />
+            <Field name="Produce" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\storesalesdata.csv" type="Double" />
+            <Field name="Floral" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\storesalesdata.csv" type="Double" />
+            <Field name="Deli" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\storesalesdata.csv" type="Double" />
+            <Field name="Bakery" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\storesalesdata.csv" type="Double" />
+            <Field name="General_Merchandise" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\storesalesdata.csv" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="186" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Year" />
+            <Field field="Months" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Year" />
+            <Field field="Months" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_Existing_Forecast" selected="True" rename="Existing Stores" input="Left_" />
+                <SelectField field="Right_Year" selected="False" rename="Right_Year" input="Right_" />
+                <SelectField field="Right_Months" selected="False" rename="Right_Months" input="Right_" />
+                <SelectField field="Right_New Forecast" selected="True" rename="New Stores" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="6" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="6" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Final Data Prep for Visualizations</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

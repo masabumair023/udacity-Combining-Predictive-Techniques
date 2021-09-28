@@ -1,0 +1,1303 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.4">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="66" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">storesalesdata.csv</File>
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+            <Delimeter>,</Delimeter>
+            <IgnoreErrors>False</IgnoreErrors>
+            <FieldLen>254</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>storesalesdata.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Store" size="254" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\storesalesdata.csv" type="V_String" />
+            <Field name="Day" size="254" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\storesalesdata.csv" type="V_String" />
+            <Field name="Month" size="254" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\storesalesdata.csv" type="V_String" />
+            <Field name="Year" size="254" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\storesalesdata.csv" type="V_String" />
+            <Field name="Dry_Grocery" size="254" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\storesalesdata.csv" type="V_String" />
+            <Field name="Dairy" size="254" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\storesalesdata.csv" type="V_String" />
+            <Field name="Frozen_Food" size="254" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\storesalesdata.csv" type="V_String" />
+            <Field name="Meat" size="254" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\storesalesdata.csv" type="V_String" />
+            <Field name="Produce" size="254" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\storesalesdata.csv" type="V_String" />
+            <Field name="Floral" size="254" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\storesalesdata.csv" type="V_String" />
+            <Field name="Deli" size="254" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\storesalesdata.csv" type="V_String" />
+            <Field name="Bakery" size="254" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\storesalesdata.csv" type="V_String" />
+            <Field name="General_Merchandise" size="254" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\storesalesdata.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="174" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="Store" selected="True" />
+            <Field field="Day" selected="True" />
+            <Field field="Month" selected="True" />
+            <Field field="Year" selected="True" />
+            <Field field="Dry_Grocery" selected="True" />
+            <Field field="Dairy" selected="True" />
+            <Field field="Frozen_Food" selected="True" />
+            <Field field="Meat" selected="True" />
+            <Field field="Produce" selected="True" />
+            <Field field="Floral" selected="True" />
+            <Field field="Deli" selected="True" />
+            <Field field="Bakery" selected="True" />
+            <Field field="General_Merchandise" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Store" size="5" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\storesalesdata.csv" type="String" />
+            <Field name="Day" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\storesalesdata.csv" type="Byte" />
+            <Field name="Month" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\storesalesdata.csv" type="Byte" />
+            <Field name="Year" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\storesalesdata.csv" type="Int16" />
+            <Field name="Dry_Grocery" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\storesalesdata.csv" type="Double" />
+            <Field name="Dairy" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\storesalesdata.csv" type="Double" />
+            <Field name="Frozen_Food" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\storesalesdata.csv" type="Double" />
+            <Field name="Meat" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\storesalesdata.csv" type="Double" />
+            <Field name="Produce" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\storesalesdata.csv" type="Double" />
+            <Field name="Floral" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\storesalesdata.csv" type="Double" />
+            <Field name="Deli" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\storesalesdata.csv" type="Double" />
+            <Field name="Bakery" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\storesalesdata.csv" type="Double" />
+            <Field name="General_Merchandise" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\storesalesdata.csv" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="282" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Year" action="GroupBy" rename="Year" />
+            <SummarizeField field="Month" action="GroupBy" rename="Month" />
+            <SummarizeField field="Produce" action="Sum" rename="Sum_Produce" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings>
+        <Position x="378" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="mod_name">ETS (M,N,M)</Value>
+          <Value name="target_field">Sum_Produce</Value>
+          <Value name="freq_hourly">False</Value>
+          <Value name="freq_daily">False</Value>
+          <Value name="freq_weekdays">False</Value>
+          <Value name="freq_weekly">False</Value>
+          <Value name="freq_monthly">True</Value>
+          <Value name="freq_quarterly">False</Value>
+          <Value name="freq_annually">False</Value>
+          <Value name="freq_other">False</Value>
+          <Value name="error_auto">False</Value>
+          <Value name="error_add">False</Value>
+          <Value name="error_mult">True</Value>
+          <Value name="trend_type_auto">False</Value>
+          <Value name="trend_type_add">False</Value>
+          <Value name="trend_type_mult">False</Value>
+          <Value name="trend_type_none">True</Value>
+          <Value name="trend_damp_auto">True</Value>
+          <Value name="trend_damp_yes">False</Value>
+          <Value name="trend_damp_no">False</Value>
+          <Value name="seas_auto">False</Value>
+          <Value name="seas_add">False</Value>
+          <Value name="seas_mult">True</Value>
+          <Value name="seas_none">False</Value>
+          <Value name="ic_auto">False</Value>
+          <Value name="ic_aic">True</Value>
+          <Value name="ic_aicc">False</Value>
+          <Value name="ic_bic">False</Value>
+          <Value name="box_cox">False</Value>
+          <Value name="lambda">0.00</Value>
+          <Value name="series_start">False</Value>
+          <Value name="start_year">2012</Value>
+          <Value name="start_month_qtr">1</Value>
+          <Value name="forecast_periods">6</Value>
+          <Value name="alteryx.week.US">True</Value>
+          <Value name="alteryx.week.UK">False</Value>
+          <Value name="alteryx.week.ISO8601">False</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.50</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+          <Value name="pointsize">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\ETS.yxmc" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings>
+        <Position x="510" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="forecast">Existing_Forecast</Value>
+          <Value name="large_conf">95</Value>
+          <Value name="small_conf">80</Value>
+          <Value name="horizon">12</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.50</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+          <Value name="pointsize">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Period" source="R-DATA:" type="Double" />
+            <Field name="Sub_Period" source="R-DATA:" type="Int32" />
+            <Field name="Existing_Forecast" source="R-DATA:" type="Double" />
+            <Field name="Existing_Forecast_high_95" source="R-DATA:" type="Double" />
+            <Field name="Existing_Forecast_high_80" source="R-DATA:" type="Double" />
+            <Field name="Existing_Forecast_low_80" source="R-DATA:" type="Double" />
+            <Field name="Existing_Forecast_low_95" source="R-DATA:" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Interactive Viz">
+          <RecordInfo>
+            <Field name="Text" size="2147483647" source="Report:Text:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Report">
+          <RecordInfo>
+            <Field name="Report" size="1073741823" source="Report: (Multiple Sources)" type="V_WString" />
+            <Field name="Desc" size="64" source="Formula: (Multiple Sources)" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\TS_Forecast.yxmc" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="618" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IIF([Period] = 4 OR [Period] = 5, 2016, [Period])&#xA;" field="Period" size="8" type="Double" />
+            <FormulaField expression="IF [Sub_Period] = 11 THEN &quot;Jan&quot; &#xA;ELSEIF [Sub_Period] = 12 THEN &quot;Feb&quot; &#xA;ELSEIF [Sub_Period] = 1 THEN &quot;Mar&quot; &#xA;ELSEIF [Sub_Period] = 2 THEN &quot;Apr&quot; &#xA;ELSEIF [Sub_Period] = 3 THEN &quot;May&quot; &#xA;ELSEIF [Sub_Period] = 4 THEN &quot;Jun&quot; &#xA;ELSEIF [Sub_Period] = 5 THEN &quot;Jul&quot; &#xA;ELSEIF [Sub_Period] = 6 THEN &quot;Aug&quot; &#xA;ELSEIF [Sub_Period] = 7 THEN &quot;Sep&quot; &#xA;ELSEIF [Sub_Period] = 8 THEN &quot;Oct&quot; &#xA;ELSEIF [Sub_Period] = 9 THEN &quot;Nov&quot; &#xA;ELSEIF [Sub_Period] = 10 THEN &quot;Dec&quot; ELSE [Sub_Period] ENDIF" field="Months" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Period = IIF([Period] = 4 OR [Period] = 5, 2016, [Period])
+
+Months = IF [Sub_Per...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="726" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Period" selected="True" rename="Year" />
+            <SelectField field="Months" selected="True" />
+            <SelectField field="Sub_Period" selected="False" />
+            <SelectField field="Existing_Forecast" selected="True" />
+            <SelectField field="Existing_Forecast_high_95" selected="False" />
+            <SelectField field="Existing_Forecast_high_80" selected="False" />
+            <SelectField field="Existing_Forecast_low_80" selected="False" />
+            <SelectField field="Existing_Forecast_low_95" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="822" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File FileFormat="19" MaxRecords="">Existing Stores Forecast.yxdb</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <NoSpatialIndex>False</NoSpatialIndex>
+            <SaveSource>True</SaveSource>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Existing Stores Forecast.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="450" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">Clustering Output.csv</File>
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+            <Delimeter>,</Delimeter>
+            <IgnoreErrors>False</IgnoreErrors>
+            <FieldLen>254</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Clustering Output.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Store" size="254" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\Clustering Output.csv" type="V_String" />
+            <Field name="Sum_Dry_Grocery" size="254" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\Clustering Output.csv" type="V_String" />
+            <Field name="Sum_Dairy" size="254" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\Clustering Output.csv" type="V_String" />
+            <Field name="Sum_Frozen_Food" size="254" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\Clustering Output.csv" type="V_String" />
+            <Field name="Sum_Meat" size="254" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\Clustering Output.csv" type="V_String" />
+            <Field name="Sum_Produce" size="254" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\Clustering Output.csv" type="V_String" />
+            <Field name="Sum_Floral" size="254" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\Clustering Output.csv" type="V_String" />
+            <Field name="Sum_Deli" size="254" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\Clustering Output.csv" type="V_String" />
+            <Field name="Sum_Bakery" size="254" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\Clustering Output.csv" type="V_String" />
+            <Field name="Sum_General_Merchandise" size="254" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\Clustering Output.csv" type="V_String" />
+            <Field name="Total.Sales" size="254" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\Clustering Output.csv" type="V_String" />
+            <Field name="Per_Dry_Grocery" size="254" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\Clustering Output.csv" type="V_String" />
+            <Field name="Per_Dairy" size="254" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\Clustering Output.csv" type="V_String" />
+            <Field name="Per_Frozen_Food" size="254" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\Clustering Output.csv" type="V_String" />
+            <Field name="Per_Meat" size="254" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\Clustering Output.csv" type="V_String" />
+            <Field name="Per_Produce" size="254" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\Clustering Output.csv" type="V_String" />
+            <Field name="Per_Floral" size="254" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\Clustering Output.csv" type="V_String" />
+            <Field name="Per_Deli" size="254" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\Clustering Output.csv" type="V_String" />
+            <Field name="Per_Bakery" size="254" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\Clustering Output.csv" type="V_String" />
+            <Field name="Per_General_Marchandise" size="254" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\Clustering Output.csv" type="V_String" />
+            <Field name="City" size="254" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\Clustering Output.csv" type="V_String" />
+            <Field name="State" size="254" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\Clustering Output.csv" type="V_String" />
+            <Field name="Zip" size="254" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\Clustering Output.csv" type="V_String" />
+            <Field name="Clusters" size="254" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\Clustering Output.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="246" y="390" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Store" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Store" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_Store" selected="False" rename="Right_Store" input="Right_" />
+                <SelectField field="Right_Sum_Dry_Grocery" selected="False" input="Right_" />
+                <SelectField field="Right_Sum_Dairy" selected="False" input="Right_" />
+                <SelectField field="Right_Sum_Frozen_Food" selected="False" input="Right_" />
+                <SelectField field="Right_Sum_Meat" selected="False" input="Right_" />
+                <SelectField field="Right_Sum_Produce" selected="False" input="Right_" />
+                <SelectField field="Right_Sum_Floral" selected="False" input="Right_" />
+                <SelectField field="Right_Sum_Deli" selected="False" input="Right_" />
+                <SelectField field="Right_Sum_Bakery" selected="False" input="Right_" />
+                <SelectField field="Right_Sum_General_Merchandise" selected="False" input="Right_" />
+                <SelectField field="Right_Total.Sales" selected="False" input="Right_" />
+                <SelectField field="Right_Per_Dry_Grocery" selected="False" input="Right_" />
+                <SelectField field="Right_Per_Dairy" selected="False" input="Right_" />
+                <SelectField field="Right_Per_Frozen_Food" selected="False" input="Right_" />
+                <SelectField field="Right_Per_Meat" selected="False" input="Right_" />
+                <SelectField field="Right_Per_Produce" selected="False" input="Right_" />
+                <SelectField field="Right_Per_Floral" selected="False" input="Right_" />
+                <SelectField field="Right_Per_Deli" selected="False" input="Right_" />
+                <SelectField field="Right_Per_Bakery" selected="False" input="Right_" />
+                <SelectField field="Right_Per_General_Marchandise" selected="False" input="Right_" />
+                <SelectField field="Right_City" selected="False" input="Right_" />
+                <SelectField field="Right_State" selected="False" input="Right_" />
+                <SelectField field="Right_Zip" selected="False" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="138" y="450" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="Store" selected="True" />
+            <Field field="Sum_Dry_Grocery" selected="True" />
+            <Field field="Sum_Dairy" selected="True" />
+            <Field field="Sum_Frozen_Food" selected="True" />
+            <Field field="Sum_Meat" selected="True" />
+            <Field field="Sum_Produce" selected="True" />
+            <Field field="Sum_Floral" selected="True" />
+            <Field field="Sum_Deli" selected="True" />
+            <Field field="Sum_Bakery" selected="True" />
+            <Field field="Sum_General_Merchandise" selected="True" />
+            <Field field="Total.Sales" selected="True" />
+            <Field field="Per_Dry_Grocery" selected="True" />
+            <Field field="Per_Dairy" selected="True" />
+            <Field field="Per_Frozen_Food" selected="True" />
+            <Field field="Per_Meat" selected="True" />
+            <Field field="Per_Produce" selected="True" />
+            <Field field="Per_Floral" selected="True" />
+            <Field field="Per_Deli" selected="True" />
+            <Field field="Per_Bakery" selected="True" />
+            <Field field="Per_General_Marchandise" selected="True" />
+            <Field field="City" selected="True" />
+            <Field field="State" selected="True" />
+            <Field field="Zip" selected="True" />
+            <Field field="Clusters" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Store" size="5" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\Clustering Output.csv" type="String" />
+            <Field name="Sum_Dry_Grocery" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\Clustering Output.csv" type="Double" />
+            <Field name="Sum_Dairy" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\Clustering Output.csv" type="Double" />
+            <Field name="Sum_Frozen_Food" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\Clustering Output.csv" type="Double" />
+            <Field name="Sum_Meat" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\Clustering Output.csv" type="Double" />
+            <Field name="Sum_Produce" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\Clustering Output.csv" type="Double" />
+            <Field name="Sum_Floral" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\Clustering Output.csv" type="Double" />
+            <Field name="Sum_Deli" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\Clustering Output.csv" type="Double" />
+            <Field name="Sum_Bakery" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\Clustering Output.csv" type="Double" />
+            <Field name="Sum_General_Merchandise" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\Clustering Output.csv" type="Double" />
+            <Field name="Total.Sales" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\Clustering Output.csv" type="Double" />
+            <Field name="Per_Dry_Grocery" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\Clustering Output.csv" type="Double" />
+            <Field name="Per_Dairy" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\Clustering Output.csv" type="Double" />
+            <Field name="Per_Frozen_Food" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\Clustering Output.csv" type="Double" />
+            <Field name="Per_Meat" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\Clustering Output.csv" type="Double" />
+            <Field name="Per_Produce" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\Clustering Output.csv" type="Double" />
+            <Field name="Per_Floral" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\Clustering Output.csv" type="Double" />
+            <Field name="Per_Deli" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\Clustering Output.csv" type="Double" />
+            <Field name="Per_Bakery" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\Clustering Output.csv" type="Double" />
+            <Field name="Per_General_Marchandise" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\Clustering Output.csv" type="Double" />
+            <Field name="City" size="21" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\Clustering Output.csv" type="V_String" />
+            <Field name="State" size="2" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\Clustering Output.csv" type="String" />
+            <Field name="Zip" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\Clustering Output.csv" type="Int32" />
+            <Field name="Clusters" source="File: E:\UDACITY\BERTELSMANN TECHNOLOGY SCHOLARSHIP PROGRAM\Predictive Analytics for Business Nanodegree\Alteryx\Projects\Capstone Project\Clustering Output.csv" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="342" y="414" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Clusters" action="GroupBy" rename="Clusters" />
+            <SummarizeField field="Store" action="GroupBy" rename="Store" />
+            <SummarizeField field="Year" action="GroupBy" rename="Year" />
+            <SummarizeField field="Month" action="GroupBy" rename="Month" />
+            <SummarizeField field="Produce" action="Sum" rename="Sum_Produce" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="534" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>Clusters</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2021-09-11 18:08:53</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>1</Operand>
+              <StartDate>2021-09-11 18:08:53</StartDate>
+              <EndDate>2021-09-11 18:08:53</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Clusters] = 1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="534" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>Clusters</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2021-09-11 18:08:53</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>2</Operand>
+              <StartDate>2021-09-11 18:08:53</StartDate>
+              <EndDate>2021-09-11 18:08:53</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Clusters] = 2</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="534" y="510" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>Clusters</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2021-09-11 18:08:53</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>3</Operand>
+              <StartDate>2021-09-11 18:08:53</StartDate>
+              <EndDate>2021-09-11 18:08:53</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Clusters] = 3</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings>
+        <Position x="630" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="mod_name">ETS(M,N,M)_Cluster1</Value>
+          <Value name="target_field">Avg_Sum_Produce</Value>
+          <Value name="freq_hourly">False</Value>
+          <Value name="freq_daily">False</Value>
+          <Value name="freq_weekdays">False</Value>
+          <Value name="freq_weekly">False</Value>
+          <Value name="freq_monthly">True</Value>
+          <Value name="freq_quarterly">False</Value>
+          <Value name="freq_annually">False</Value>
+          <Value name="freq_other">False</Value>
+          <Value name="error_auto">False</Value>
+          <Value name="error_add">False</Value>
+          <Value name="error_mult">True</Value>
+          <Value name="trend_type_auto">False</Value>
+          <Value name="trend_type_add">False</Value>
+          <Value name="trend_type_mult">False</Value>
+          <Value name="trend_type_none">True</Value>
+          <Value name="trend_damp_auto">True</Value>
+          <Value name="trend_damp_yes">False</Value>
+          <Value name="trend_damp_no">False</Value>
+          <Value name="seas_auto">False</Value>
+          <Value name="seas_add">False</Value>
+          <Value name="seas_mult">True</Value>
+          <Value name="seas_none">False</Value>
+          <Value name="ic_auto">False</Value>
+          <Value name="ic_aic">True</Value>
+          <Value name="ic_aicc">False</Value>
+          <Value name="ic_bic">False</Value>
+          <Value name="box_cox">False</Value>
+          <Value name="lambda">0.00</Value>
+          <Value name="series_start">False</Value>
+          <Value name="start_year">2012</Value>
+          <Value name="start_month_qtr">1</Value>
+          <Value name="forecast_periods">6</Value>
+          <Value name="alteryx.week.US">True</Value>
+          <Value name="alteryx.week.UK">False</Value>
+          <Value name="alteryx.week.ISO8601">False</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.50</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+          <Value name="pointsize">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\ETS.yxmc" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings>
+        <Position x="642" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="mod_name">ETS(M,N,M)_Cluster2</Value>
+          <Value name="target_field">Avg_Sum_Produce</Value>
+          <Value name="freq_hourly">False</Value>
+          <Value name="freq_daily">False</Value>
+          <Value name="freq_weekdays">False</Value>
+          <Value name="freq_weekly">False</Value>
+          <Value name="freq_monthly">True</Value>
+          <Value name="freq_quarterly">False</Value>
+          <Value name="freq_annually">False</Value>
+          <Value name="freq_other">False</Value>
+          <Value name="error_auto">False</Value>
+          <Value name="error_add">False</Value>
+          <Value name="error_mult">True</Value>
+          <Value name="trend_type_auto">False</Value>
+          <Value name="trend_type_add">False</Value>
+          <Value name="trend_type_mult">False</Value>
+          <Value name="trend_type_none">True</Value>
+          <Value name="trend_damp_auto">True</Value>
+          <Value name="trend_damp_yes">False</Value>
+          <Value name="trend_damp_no">False</Value>
+          <Value name="seas_auto">False</Value>
+          <Value name="seas_add">False</Value>
+          <Value name="seas_mult">True</Value>
+          <Value name="seas_none">False</Value>
+          <Value name="ic_auto">False</Value>
+          <Value name="ic_aic">True</Value>
+          <Value name="ic_aicc">False</Value>
+          <Value name="ic_bic">False</Value>
+          <Value name="box_cox">False</Value>
+          <Value name="lambda">0.00</Value>
+          <Value name="series_start">False</Value>
+          <Value name="start_year">2012</Value>
+          <Value name="start_month_qtr">1</Value>
+          <Value name="forecast_periods">6</Value>
+          <Value name="alteryx.week.US">True</Value>
+          <Value name="alteryx.week.UK">False</Value>
+          <Value name="alteryx.week.ISO8601">False</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.50</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+          <Value name="pointsize">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\ETS.yxmc" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings>
+        <Position x="642" y="510" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="mod_name">ETS(M,N,M)_Cluster3</Value>
+          <Value name="target_field">Avg_Sum_Produce</Value>
+          <Value name="freq_hourly">False</Value>
+          <Value name="freq_daily">False</Value>
+          <Value name="freq_weekdays">False</Value>
+          <Value name="freq_weekly">False</Value>
+          <Value name="freq_monthly">True</Value>
+          <Value name="freq_quarterly">False</Value>
+          <Value name="freq_annually">False</Value>
+          <Value name="freq_other">False</Value>
+          <Value name="error_auto">False</Value>
+          <Value name="error_add">False</Value>
+          <Value name="error_mult">True</Value>
+          <Value name="trend_type_auto">False</Value>
+          <Value name="trend_type_add">False</Value>
+          <Value name="trend_type_mult">False</Value>
+          <Value name="trend_type_none">True</Value>
+          <Value name="trend_damp_auto">True</Value>
+          <Value name="trend_damp_yes">False</Value>
+          <Value name="trend_damp_no">False</Value>
+          <Value name="seas_auto">False</Value>
+          <Value name="seas_add">False</Value>
+          <Value name="seas_mult">True</Value>
+          <Value name="seas_none">False</Value>
+          <Value name="ic_auto">False</Value>
+          <Value name="ic_aic">True</Value>
+          <Value name="ic_aicc">False</Value>
+          <Value name="ic_bic">False</Value>
+          <Value name="box_cox">False</Value>
+          <Value name="lambda">0.00</Value>
+          <Value name="series_start">False</Value>
+          <Value name="start_year">2012</Value>
+          <Value name="start_month_qtr">1</Value>
+          <Value name="forecast_periods">6</Value>
+          <Value name="alteryx.week.US">True</Value>
+          <Value name="alteryx.week.UK">False</Value>
+          <Value name="alteryx.week.ISO8601">False</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.50</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+          <Value name="pointsize">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\ETS.yxmc" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings>
+        <Position x="726" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="forecast">forecast</Value>
+          <Value name="large_conf">95</Value>
+          <Value name="small_conf">80</Value>
+          <Value name="horizon">12</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.50</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+          <Value name="pointsize">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Period" source="R-DATA:" type="Double" />
+            <Field name="Sub_Period" source="R-DATA:" type="Int32" />
+            <Field name="forecast" source="R-DATA:" type="Double" />
+            <Field name="forecast_high_95" source="R-DATA:" type="Double" />
+            <Field name="forecast_high_80" source="R-DATA:" type="Double" />
+            <Field name="forecast_low_80" source="R-DATA:" type="Double" />
+            <Field name="forecast_low_95" source="R-DATA:" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Interactive Viz">
+          <RecordInfo>
+            <Field name="Text" size="2147483647" source="Report:Text:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Report">
+          <RecordInfo>
+            <Field name="Report" size="1073741823" source="Report: (Multiple Sources)" type="V_WString" />
+            <Field name="Desc" size="64" source="Formula: (Multiple Sources)" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\TS_Forecast.yxmc" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings>
+        <Position x="750" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="forecast">forecast</Value>
+          <Value name="large_conf">95</Value>
+          <Value name="small_conf">80</Value>
+          <Value name="horizon">12</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.50</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+          <Value name="pointsize">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Period" source="R-DATA:" type="Double" />
+            <Field name="Sub_Period" source="R-DATA:" type="Int32" />
+            <Field name="forecast" source="R-DATA:" type="Double" />
+            <Field name="forecast_high_95" source="R-DATA:" type="Double" />
+            <Field name="forecast_high_80" source="R-DATA:" type="Double" />
+            <Field name="forecast_low_80" source="R-DATA:" type="Double" />
+            <Field name="forecast_low_95" source="R-DATA:" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Interactive Viz">
+          <RecordInfo>
+            <Field name="Text" size="2147483647" source="Report:Text:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Report">
+          <RecordInfo>
+            <Field name="Report" size="1073741823" source="Report: (Multiple Sources)" type="V_WString" />
+            <Field name="Desc" size="64" source="Formula: (Multiple Sources)" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\TS_Forecast.yxmc" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings>
+        <Position x="762" y="510" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="forecast">forecast</Value>
+          <Value name="large_conf">95</Value>
+          <Value name="small_conf">80</Value>
+          <Value name="horizon">12</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.50</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+          <Value name="pointsize">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Period" source="R-DATA:" type="Double" />
+            <Field name="Sub_Period" source="R-DATA:" type="Int32" />
+            <Field name="forecast" source="R-DATA:" type="Double" />
+            <Field name="forecast_high_95" source="R-DATA:" type="Double" />
+            <Field name="forecast_high_80" source="R-DATA:" type="Double" />
+            <Field name="forecast_low_80" source="R-DATA:" type="Double" />
+            <Field name="forecast_low_95" source="R-DATA:" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Interactive Viz">
+          <RecordInfo>
+            <Field name="Text" size="2147483647" source="Report:Text:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Report">
+          <RecordInfo>
+            <Field name="Report" size="1073741823" source="Report: (Multiple Sources)" type="V_WString" />
+            <Field name="Desc" size="64" source="Formula: (Multiple Sources)" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\TS_Forecast.yxmc" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="822" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[forecast]*3" field="forecast" size="8" type="Double" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[forecast = [forecast]*3
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="870" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[forecast]*6" field="forecast" size="8" type="Double" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[forecast = [forecast]*6
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="882" y="510" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[forecast]*1" field="forecast" size="8" type="Double" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[forecast = [forecast]*1
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="1002" y="414" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="426" y="414" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Clusters" action="GroupBy" rename="Clusters" />
+            <SummarizeField field="Year" action="GroupBy" rename="Year" />
+            <SummarizeField field="Month" action="GroupBy" rename="Month" />
+            <SummarizeField field="Sum_Produce" action="Avg" rename="Avg_Sum_Produce" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1086" y="414" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Period" action="GroupBy" rename="Period" />
+            <SummarizeField field="Sub_Period" action="GroupBy" rename="Sub_Period" />
+            <SummarizeField field="forecast" action="Sum" rename="Sum_forecast" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1170" y="414" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IIF([Period] = 4 OR [Period] = 5, 2016, [Period])&#xA;" field="Period" size="8" type="Double" />
+            <FormulaField expression="IF [Sub_Period] = 11 THEN &quot;Jan&quot; &#xA;ELSEIF [Sub_Period] = 12 THEN &quot;Feb&quot; &#xA;ELSEIF [Sub_Period] = 1 THEN &quot;Mar&quot; &#xA;ELSEIF [Sub_Period] = 2 THEN &quot;Apr&quot; &#xA;ELSEIF [Sub_Period] = 3 THEN &quot;May&quot; &#xA;ELSEIF [Sub_Period] = 4 THEN &quot;Jun&quot; &#xA;ELSEIF [Sub_Period] = 5 THEN &quot;Jul&quot; &#xA;ELSEIF [Sub_Period] = 6 THEN &quot;Aug&quot; &#xA;ELSEIF [Sub_Period] = 7 THEN &quot;Sep&quot; &#xA;ELSEIF [Sub_Period] = 8 THEN &quot;Oct&quot; &#xA;ELSEIF [Sub_Period] = 9 THEN &quot;Nov&quot; &#xA;ELSEIF [Sub_Period] = 10 THEN &quot;Dec&quot; ELSE [Sub_Period] ENDIF" field="Months" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Period = IIF([Period] = 4 OR [Period] = 5, 2016, [Period])
+
+Months = IF [Sub_Per...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="31">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1362" y="414" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File FileFormat="19" MaxRecords="">NewStores Forecast.yxdb</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <NoSpatialIndex>False</NoSpatialIndex>
+            <SaveSource>True</SaveSource>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>NewStores Forecast.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="32">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1266" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Period" selected="True" rename="Year" />
+            <SelectField field="Months" selected="True" />
+            <SelectField field="Sub_Period" selected="False" />
+            <SelectField field="Existing_Forecast" selected="False" />
+            <SelectField field="Existing_Forecast_high_95" selected="False" />
+            <SelectField field="Existing_Forecast_high_80" selected="False" />
+            <SelectField field="Existing_Forecast_low_80" selected="False" />
+            <SelectField field="Existing_Forecast_low_95" selected="False" />
+            <SelectField field="Sum_forecast" selected="True" rename="New Forecast" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="11" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="11" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Join" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="True" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="True" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="True" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="Output" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="30" Connection="Output" />
+      <Destination ToolID="32" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="32" Connection="Output" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Part 3.2 Forecasting</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
